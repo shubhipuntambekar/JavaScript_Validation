@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="loginstyle.css">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="login-form">
+            <form action="/action.php">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <input type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+        <div id="validation-div">
+            <h3>Password must contain the following:</h3>
+            <p id="lowercase" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="uppercase" class="invalid">An <b>uppercase</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">At least <b>8 characters</b> </p>
+        </div>
+        <script src="validation.js"></script>
+    </body>
+    
+</html>
